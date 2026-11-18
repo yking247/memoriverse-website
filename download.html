@@ -36,7 +36,27 @@
 <article class="beta-card"><span class="beta-platform-label">Android</span><h3>Coming soon</h3>
 <p>We're preparing the public Google Play release of MemoriVerse. There is no public Android download yet.</p>
 <p>Volunteer for Android closed testing by emailing <a href="mailto:memoriverseapp@gmail.com?subject=MemoriVerse%20Android%20Beta%20Volunteer">memoriverseapp@gmail.com</a> with the Google email address you use in the Play Store.</p>
-<a class="button" href="mailto:memoriverseapp@gmail.com?subject=MemoriVerse%20Android%20Beta%20Volunteer">Volunteer for Android testing <span aria-hidden="true">↗</span></a>
+<div class="volunteer-actions" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+<a class="button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=memoriverseapp%40gmail.com&amp;su=MemoriVerse%20Android%20Beta%20Volunteer&amp;body=Hello%2C%20I%20would%20like%20to%20volunteer%20for%20MemoriVerse%20Android%20closed%20testing.%0A%0AMy%20Google%20Play%20email%20address%20is%3A%20" target="_blank" rel="noopener noreferrer">Volunteer using Gmail <span aria-hidden="true">↗</span></a>
+<button class="button" type="button" id="android-email-copy" style="background:#e3ebdd;border:1px solid #103529;cursor:pointer">Copy contact email</button>
+</div>
+<p class="beta-note" id="android-email-feedback" role="status" aria-live="polite">The Gmail button opens a message in your browser. If you use another email service, copy the address above and email us with the subject “MemoriVerse Android Beta Volunteer”. Include your Google Play account email.</p>
+<script>
+(function () {
+  var button = document.getElementById('android-email-copy');
+  var status = document.getElementById('android-email-feedback');
+  if (!button || !status) return;
+  button.addEventListener('click', async function () {
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText('memoriverseapp@gmail.com');
+      status.textContent = 'Copied memoriverseapp@gmail.com. Email this address using the subject “MemoriVerse Android Beta Volunteer”, and include your Google Play account email.';
+    } catch (error) {
+      status.textContent = 'Copy memoriverseapp@gmail.com from the text above, then send an email with the subject “MemoriVerse Android Beta Volunteer” and your Google Play account email.';
+    }
+  });
+})();
+</script>
 <p class="beta-note">Already approved as a tester? <a href="https://play.google.com/apps/testing/app.memoriverse.mobile">Open the Google Play closed-test opt-in link</a> with your approved Google account. This is not the public release.</p></article>
 </div>
 <div class="beta-why"><div><p class="eyebrow">Learn Scripture. Grow in faith.</p><h2>Little lessons.<br>Lasting impact.</h2></div>
