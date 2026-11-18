@@ -7,6 +7,8 @@ A standalone static GitHub Pages site, separate from the private mobile app. No 
 - `index.html` — app introduction, current release status, learning overview and existing Gabe artwork.
 - `privacy.html` — owner-authorised Privacy Policy, effective 30 October 2026. Describes the first invited-tester release and its privacy commitments. Development blockers are tracked privately in the app repository, not presented as public feature descriptions.
 - `support.html` — confirmed support/privacy email, basic help and deletion enquiry contact.
+- `download.html` — App Store download, Android coming soon, and closed-test volunteer information.
+- `beta.html` — redirects older beta invitation links to the download page.
 - `404.html` — page-not-found recovery.
 
 All assets are local. The green gradient uses colours sampled from the app logo (#2d5a38, #285535, #0d2a20 and #041e15). `app-welcome.jpg`, `app-learn.jpg` and `app-lesson.jpg` are actual captures of the existing local web app preview at 390×844, showing a guest journey without personal account information; they are labelled as web-preview screenshots on the site. The mobile layout shows the Learn and lesson screens. Smooth native anchor scrolling and progressively enhanced section reveals respect reduced-motion preferences and do not take over wheel or touch scrolling. `assets/memoriverse-logo.png` is copied unchanged from the app's configured `assets/brand/launcher-icon.png`. The guide section uses `assets/angel-guides-v2.png`, a 1536×1024 group pose variation generated with the built-in image tool at the owner's request. Its character/style reference is the existing Canva group asset `MAHZNl_C4jQ` (“MemoriVerse — Gabe Mike Raph — Friends Group — REVIEW”). Mike waves, Gabe holds an open Bible, and Raph rests his hands over his heart. It replaces the single-guide website artwork. No app source, environment files, keys, user data or backend configuration belong in this repository.
@@ -36,7 +38,7 @@ database migrations, KWS production activation or real-child data migration.
 
 ## Store links
 
-Replace the coming-soon copy with real App Store / Google Play links only after official listings exist. There are deliberately no simulated store buttons.
+The iOS app is now public: https://apps.apple.com/app/id6829163698. The homepage, download page and support FAQ use this App Store ID. Android public release is coming soon; the download page separately invites closed-test volunteers and offers an opt-in link for already approved testers. Do not present a closed-test URL as a public Android store listing. The privacy policy, CNAME, app-ads.txt and robots.txt remain unchanged by this launch update.
 
 ## Custom domain
 
